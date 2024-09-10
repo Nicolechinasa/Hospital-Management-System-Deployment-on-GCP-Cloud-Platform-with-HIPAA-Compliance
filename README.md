@@ -74,7 +74,11 @@ Infrastructure Setup
 
 2 Virtual Private Cloud (VPC): Created a VPC with subnets for segregating traffic and enhancing security.
 
+<img width="916" alt="hipaa 22" src="https://github.com/user-attachments/assets/e6f1f629-0b95-4622-843a-af3712229507">
+
 3 Firewall Rules: Configured Google Cloud firewall rules for managing access based on defined policies.
+
+<img width="941" alt="hipaa 21" src="https://github.com/user-attachments/assets/98fef5ee-0d43-4dd3-a4cf-b950ba3449bb">
 
 4 Compute Engine Instances: Provisioned Compute Engine instances for frontend, backend, and database tiers, ensuring encryption using SSL/TLS.
 
@@ -91,8 +95,13 @@ Database Creation and Server Configuration
 == Peering Connection:
 * Established a private VPC peering connection between the backend Compute Engine instance and the Cloud SQL database to ensure secure and low-latency communication.
 
+<img width="947" alt="700" src="https://github.com/user-attachments/assets/0e1e5001-3a03-4ee7-abdd-247042d7d8ea">
+
+
 == Validation and Testing:
-* Tested the setup using MySQL Workbench to ensure the database connection was operationally efficient.
+* Tested the setup using Cloud SQL studio to ensure the database connection was operationally efficient.
+  
+<img width="960" alt="hipaa 7" src="https://github.com/user-attachments/assets/de037a54-ad9a-4c82-875a-8681bad188ed">
 
 == Security Measures:
 * Enable Cloud SQL IAM roles for fine-grained access control.
@@ -101,18 +110,32 @@ Database Creation and Server Configuration
 
 Backend Creation and Configuration
 == Firewall Configuration:
-* Set up firewall rules allowing TCP traffic on relevant ports (e.g., 8080 for backend communication).
+* Set up firewall rules allowing TCP traffic on relevant ports;
+  8080 for backend communication
+  22 for configuration
+  frontend subnet
 
 == Server Access:
 * Used SSH via Google Cloud Console for server management.
 
 == Setup Steps:
 * Updated the VM and installed JDK 17, Maven, and MySQL Client.
+
+<img width="960" alt="hipaa 3" src="https://github.com/user-attachments/assets/8a1531f0-7077-4e69-82d7-0ef6945d0293">
+
 * Cloned the backend code from GitHub and configured for deployment.
-* Applied Cross-Origin Resource Sharing (CORS) security to restrict access to specific domains.
+* Applied Cross-Origin Resource Sharing (CORS) security to restrict access to the frontend domain.
+
+<img width="960" alt="HIPAA 20" src="https://github.com/user-attachments/assets/07a5f393-7961-4c2e-9334-822ba8d22c33">
 
 ==Application Deployment:
 * Packaged and executed the application using Maven.
+  
+<img width="869" alt="hipaa 6" src="https://github.com/user-attachments/assets/46afaf0e-c40d-4e9c-a81c-4ceb8bce2adf">
+
+<img width="931" alt="hipaa 13" src="https://github.com/user-attachments/assets/0307b29a-284e-44b4-b6a1-82f400dd0bec">
+
+<img width="933" alt="706" src="https://github.com/user-attachments/assets/83b0f484-b0db-4926-8a19-32775663803d">
 
 == Security Measures:
 * Closed unnecessary ports and restricted access to the backend server.
@@ -120,7 +143,10 @@ Backend Creation and Configuration
 Frontend Creation and Server Configuration
 
 == Firewall Configuration:
-* Set up firewall rules allowing TCP traffic on relevant ports (e.g., 3000 for frontend access).
+* Set up firewall rules allowing TCP traffic on relevant ports;
+  443 for public access
+  22 for configuration
+  3000 for application to run 
 
 == Server Access:
 * Used SSH via Google Cloud Console for server management.
@@ -133,13 +159,20 @@ Frontend Creation and Server Configuration
 * Configured the frontend to bind with the backend server on port 8080, allowing communication between the two services.
 * Installed project-specific dependencies using npm, ensuring all required libraries are available.
 * Started the development server to test and develop the application locally.
+  
+<img width="960" alt="705" src="https://github.com/user-attachments/assets/1732e7f6-7d7c-4afa-9851-901129bd3c9d">
+
 
 ==Application Testing and Deployment:
-* Verified the application was functioning as expected.
-* Confirmed that the application was securely connecting to the backend server on port 8080.
+* Verified the application was functioning as expected and running on port 3000.
+  
+<img width="909" alt="701" src="https://github.com/user-attachments/assets/cd394931-69b7-4a08-8b92-6624d239059a">
+
+<img width="945" alt="703" src="https://github.com/user-attachments/assets/ae1db9c6-8b17-4726-9a8c-fe8d9eadfa02">
+
 
 == Security Measures:
-* Closed unnecessary ports and restricted access to the frontend server.
+* Closed unnecessary ports.
 
 DNS Configuration with Namecheap
 * Domain Purchase: Purchased a domain from Namecheap for the hospital management system.
