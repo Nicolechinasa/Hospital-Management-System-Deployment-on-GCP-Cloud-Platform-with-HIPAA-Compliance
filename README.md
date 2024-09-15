@@ -128,7 +128,8 @@ Backend Creation and Configuration
 * Cloned the backend code from GitHub and configured for deployment.
 * Applied Cross-Origin Resource Sharing (CORS) security to restrict access to the frontend domain.
 
-<img width="960" alt="HIPAA 20" src="https://github.com/user-attachments/assets/07a5f393-7961-4c2e-9334-822ba8d22c33">
+<img width="960" alt="Sunday-hipaa" src="https://github.com/user-attachments/assets/e9b68395-b866-42d0-8fb2-4d62542afbc8">
+
 
 ==Application Deployment:
 * Packaged and executed the application using Maven.
