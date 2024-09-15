@@ -14,6 +14,8 @@ As the GCP Cloud Security Engineer, I spearheaded the development of an innovati
 
 Architecture
 
+![Hipaa-GCP drawio](https://github.com/user-attachments/assets/0ac61e6b-b410-4170-abea-623cb8e546a4)
+
 The system was designed with a three-tier architecture, consisting of:
 
 *  Frontend: Built using Node.js and React.js, delivering a responsive and user-friendly interface.
