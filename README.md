@@ -14,7 +14,8 @@ As the GCP Cloud Security Engineer, I spearheaded the development of an innovati
 
 Architecture
 
-![Hipaa-GCP drawio AB](https://github.com/user-attachments/assets/9983fd9f-d0b8-4651-ad5b-aa0dec5cf654)
+![Hipaa-GCP drawio AB](https://github.com/user-attachments/assets/7154a27a-ae2f-42d6-96c3-616ff37bbb33)
+
 
 The system was designed with a three-tier architecture, consisting of:
 
